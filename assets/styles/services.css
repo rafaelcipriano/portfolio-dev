@@ -1,0 +1,39 @@
+section#services {
+  height: 50vh;
+  background-color: var(--gray-100);
+  text-align: center;
+
+  > p {
+    color: var(--red);
+    font: var(--subtitle);
+  }
+
+  h2 {
+    color: var(--gray-600);
+    font: var(--title-md);
+    margin-block: 8px 56px;
+  }
+
+  div.content-services {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+
+    .service-card {
+      padding: 20px;
+      border: 1px solid var(--gray-200);
+      text-align: left;
+
+      h3 {
+        color: var(--gray-600);
+        font: var(--title-sm);
+        margin-block: 20px 8px;
+      }
+
+      p {
+        color: var(--gray-500);
+        font: var(--text-sm);
+      }
+    }
+  }
+}
