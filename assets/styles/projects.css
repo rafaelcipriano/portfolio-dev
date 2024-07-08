@@ -1,0 +1,51 @@
+section#projects {
+  height: 100vh;
+  background-color: var(--gray-200);
+  text-align: center;
+  padding-block: 72px 144px;
+
+  > p {
+    color: var(--red);
+    font: var(--subtitle);
+  }
+
+  h2 {
+    color: var(--gray-600);
+    font: var(--title-md);
+    margin-block: 8px 56px;
+  }
+
+  div.content-card {
+    margin: 0;
+    width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    div.card {
+      width: 100%;
+      border-radius: 8px;
+      padding: 12px;
+      border: 1px solid var(--gray-300);
+      border-radius: 8px;
+      background-color: var(--gray-300);
+      text-align: left;
+
+      h3 {
+        color: var(--gray-600);
+        font: var(--title-sm);
+        margin-block: 24px 8px;
+      }
+
+      p {
+        color: var(--gray-500);
+        font: var(--text-sm);
+      }
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+}
