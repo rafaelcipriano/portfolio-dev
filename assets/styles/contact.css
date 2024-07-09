@@ -1,0 +1,56 @@
+section#contact {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background: url(../images/background-contacts.png);
+  background-size: cover;
+  text-align: center;
+
+  p {
+    color: var(--purple);
+    font: var(--subtitle);
+  }
+
+  h2 {
+    color: var(--gray-600);
+    font: var(--title-md);
+    margin-block: 8px;
+  }
+
+  > span {
+    color: var(--gray-500);
+    font: var(--text-md);
+  }
+
+  nav.container-contact {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    margin-top: 48px;
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 28px 1fr 20px;
+      gap: 12px;
+      align-items: center;
+      background-color: var(--gray-300);
+      border: 2px solid var(--gray-300);
+      border-radius: 8px;
+      padding: 20px;
+      text-decoration: none;
+
+      span {
+        color: var(--gray-500);
+        font: var(--text-md);
+      }
+    }
+
+    .contact-card:hover {
+      border: 2px solid var(--blue);
+      transition: .2s;
+      svg path {
+        fill: var(--blue);
+      }
+    }
+  }
+}
